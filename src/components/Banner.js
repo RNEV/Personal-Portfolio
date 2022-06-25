@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg';
 
-export default function Banner() {
+export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const toRotate = ['Web Developer', 'Web Designer', 'UI/UX Designer'];
@@ -60,4 +60,4 @@ export default function Banner() {
       </Container>
     </section>
   );
-}
+};
