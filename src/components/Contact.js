@@ -34,6 +34,7 @@ export const Contact = () => {
       },
       body: JSON.stringify(formDetails),
     });
+
     //set button back to send
     setButtonText('Send');
     let result = response.json();
