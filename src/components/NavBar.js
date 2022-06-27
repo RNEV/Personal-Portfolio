@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import logo from '../assets/img/logo.png';
+import linkedin from '../assets/img/linkedin.svg';
+import github from '../assets/img/github.svg';
+import email from '../assets/img/email.svg';
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
@@ -50,14 +50,26 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="#">
-                <img src={navIcon1} alt="" />
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open('https://www.linkedin.com/in/royneville', '_blank');
+                }}
+                href="#"
+              >
+                <img src={linkedin} alt="" />
+              </a>
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open('https://github.com/RNEV', '_blank');
+                }}
+                href="#"
+              >
+                <img src={github} alt="" />
               </a>
               <a href="#">
-                <img src={navIcon2} alt="" />
-              </a>
-              <a href="#">
-                <img src={navIcon3} alt="" />
+                <img src={email} alt="" />
               </a>
             </div>
             <button className="vvd" onClick={() => console.log('connect')}>

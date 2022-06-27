@@ -32,7 +32,7 @@ body {
   overflow-x: hidden;
   position: relative;
   background-color: #121212 !important;
-  color: #fff !important;
+  color: rgb(228, 228, 228) !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -108,7 +108,7 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: #fff !important;
+  color: #37af2d !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -129,21 +129,21 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: rgba(217, 217, 217, 0.1);
+  background: #121212;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #37af2d;
 }
 .social-icon a::before {
   content: '';
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: #ffffff;
+  background-color: #37af2d;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -161,14 +161,15 @@ span.navbar-text {
 }
 .navbar-text button {
   font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
+  color: #37af2d;
+  border: 1px solid #37af2d;
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+  border-radius: 50px;
 }
 .navbar-text button span {
   z-index: 1;
@@ -178,11 +179,12 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #37af2d;
   left: 0;
   top: 0;
   z-index: -1;
   transition: 0.3s ease-in-out;
+  border-radius: 50px;
 }
 .navbar-text button:hover {
   color: #121212;
@@ -243,7 +245,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  /* background-image: url('./assets/img/banner-bg.png'); */
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -252,8 +254,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 8px 10px;
-  background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: linear-gradient(90.21deg, #37af2d -5.91%, #121212 111.58%);
+  border: 3px solid #0a0a0a;
+  border-radius: 5px;
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
@@ -274,7 +277,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: #37af2d;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -292,7 +295,8 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
-  animation: updown 3s linear infinite;
+  max-width: 400px;
+  width: 100%;
 }
 @keyframes updown {
   0% {
@@ -313,6 +317,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 .skill {
   padding: 0 0 50px 0;
   position: relative;
+  background: linear-gradient(#121212, #37af2d 500%);
 }
 .skill-bx {
   background: #151515;
@@ -338,7 +343,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   position: relative;
 }
 .skill-slider .item img {
-  width: 50%;
+  width: 35%;
   margin: 0 auto 15px auto;
 }
 .background-image-left {
@@ -398,7 +403,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   position: absolute;
   width: 0;
   height: 100%;
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #37af2d -5.91%, #121212 111.58%);
   top: 0;
   left: 0;
   z-index: -1;
@@ -430,7 +435,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .proj-imgbx::before {
   content: '';
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #37af2d -5.91%, #121212 111.58%);
   opacity: 0.85;
   position: absolute;
   width: 100%;
@@ -477,7 +482,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #37af2d -5.91%, #121212 111.58%);
   padding: 60px 0 200px 0;
 }
 .contact img {
@@ -553,25 +558,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Footer Css ************/
 .footer {
-  padding: 0 0 50px 0;
-  background-image: url('./assets/img/footer-bg.png');
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 0 0 25px 0;
+  background: linear-gradient(#121212, #37af2d 500%);
 }
-.newsletter-bx {
-  background: #ffffff;
-  border-radius: 55px;
-  color: #121212;
-  padding: 85px 125px;
-  margin-bottom: 80px;
-  margin-top: -122px;
-}
-.newsletter-bx h3 {
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 1.2em;
-}
+
 .new-email-bx {
   background: #fff;
   padding: 5px;
@@ -583,7 +573,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 .new-email-bx::before {
   content: '';
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #37af2d -5.91%, #121212 111.58%);
   border-radius: 20px;
   position: absolute;
   z-index: -1;
@@ -612,7 +602,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   padding: 0 15px;
 }
 .new-email-bx button {
-  background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
+  background: linear-gradient(90.21deg, #37af2d -5.91%, #121212 111.58%);
   padding: 20px 65px;
   color: #fff;
   font-weight: 500;

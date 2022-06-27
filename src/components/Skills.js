@@ -2,10 +2,12 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import meter1 from '../assets/img/meter1.svg';
-import meter2 from '../assets/img/meter2.svg';
-import meter3 from '../assets/img/meter3.svg';
-import colorSharp from '../assets/img/color-sharp.png';
+import postgres from '../assets/img/postgres.svg';
+import nodejs from '../assets/img/nodejs.svg';
+import javascript from '../assets/img/javascript.svg';
+import express from '../assets/img/express.svg';
+import html from '../assets/img/html.svg';
+import css from '../assets/img/css.svg';
 
 export const Skills = () => {
   const responsive = {
@@ -34,30 +36,38 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx">
               <h2>Skills</h2>
-              <p>Here is where skills will go this is placeholder text for now</p>
+              <p>Ever growing list of technologies and frameworks</p>
               <Carousel responsive={responsive} infinite={true} className="skill-slider">
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={postgres} alt="Image" />
+                  <h5>PostgreSQL</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <img src={nodejs} alt="Image" />
+                  <h5>Node Js</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <img src={javascript} alt="Image" />
+                  <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Dev</h5>
+                  <img src={express} alt="Image" />
+                  <h5>Express</h5>
+                </div>
+                <div className="item">
+                  <img src={html} alt="Image" />
+                  <h5>HTML 5</h5>
+                </div>
+                <div className="item">
+                  <img src={css} alt="Image" />
+                  <h5>CSS 3</h5>
                 </div>
               </Carousel>
             </div>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} alt="bg-image-left" />
+      {/* <img className="background-image-left" src={colorSharp} alt="bg-image-left" /> */}
     </section>
   );
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import logo from '../assets/img/logo.png';
+import linkedin from '../assets/img/linkedin.svg';
+import github from '../assets/img/github.svg';
+import email from '../assets/img/email.svg';
 
 export const Footer = () => {
   return (
@@ -16,13 +16,13 @@ export const Footer = () => {
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
               <a href="">
-                <img src={navIcon1} alt="Icon1" />
+                <img src={linkedin} alt="Icon1" />
               </a>
               <a href="">
-                <img src={navIcon2} alt="Icon2" />
+                <img src={github} alt="Icon2" />
               </a>
               <a href="">
-                <img src={navIcon3} alt="Icon3" />
+                <img src={email} alt="Icon3" />
               </a>
             </div>
             <p>CopyRight 2022. All Rights Reserved by Roy Neville</p>
