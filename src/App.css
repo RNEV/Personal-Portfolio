@@ -72,7 +72,9 @@ button {
   background-color: transparent;
 }
 
-input: focus, textarea:focus, select:focus {
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
 
@@ -152,7 +154,7 @@ span.navbar-text {
   transform: scale(1);
 }
 .social-icon a img {
-  width: 40%;
+  width: 50%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
@@ -239,6 +241,10 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-color: transparent;
+}
+
+.navbar-logo {
+  width: 70%;
 }
 
 /************ Banner Css ************/
@@ -482,8 +488,9 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #37af2d -5.91%, #121212 111.58%);
-  padding: 60px 0 200px 0;
+  background: linear-gradient(#121212, #37af2d 500%);
+  padding: 60px 0 200px;
+  margin-bottom: 20px;
 }
 .contact img {
   width: 92%;
@@ -610,7 +617,7 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
   border-radius: 18px;
 }
 .footer img {
-  width: 26%;
+  width: 10%;
 }
 .footer p {
   font-weight: 400;

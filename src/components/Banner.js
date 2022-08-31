@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from '../assets/img/header-img.svg';
 import portraitImg from '../assets/img/Portrait.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -13,7 +12,6 @@ export const Banner = () => {
   const toRotate = ['Web Developer', 'Perpetual Student', 'Creator'];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(200);
-  console.log(delta);
   const period = 1000;
 
   useEffect(() => {
@@ -43,13 +41,14 @@ export const Banner = () => {
       setDelta(200);
     }
   };
+
   return (
     <section className="banner" id="home">
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
-              {/* code below checks if the element is visible on screen, and if it is activates animations */}
+              {/* code below checks if the element is visible on screen, and if it is,  activates animations */}
               {({ isVisible }) => (
                 <div className={isVisible ? 'animate__animated animate__fadeInDownBig' : ''}>
                   <span className="tagline">Welcome to Roy's Portfolio</span>

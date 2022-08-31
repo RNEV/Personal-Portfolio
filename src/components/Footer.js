@@ -11,14 +11,25 @@ export const Footer = () => {
       <Container>
         <Row className="align-item-center">
           <Col sm={6}>
-            <img src={logo} alt="Logo" />
+            <img className="footer-logo" src={logo} alt="Logo" />
           </Col>
           <Col sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="">
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open('https://www.linkedin.com/in/royneville', '_blank');
+                }}
+                href="#"
+              >
                 <img src={linkedin} alt="Icon1" />
               </a>
-              <a href="">
+              <a
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open('https://github.com/RNEV', '_blank');
+                }}
+              >
                 <img src={github} alt="Icon2" />
               </a>
               <a href="">
