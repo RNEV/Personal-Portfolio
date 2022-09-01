@@ -28,49 +28,49 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="md" className={scrolled ? 'scrolled' : ''}>
+    <Navbar expand='md' className={scrolled ? 'scrolled' : ''}>
       <Container>
-        <Navbar.Brand href="/">
-          <img className="navbar-logo" src={logo} alt="Logo" />
+        <Navbar.Brand href='/'>
+          <img className='navbar-logo' src={logo} alt='Logo' />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
+        <Navbar.Toggle aria-controls='basic-navbar-nav'>
+          <span className='navbar-toggler-icon'></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>
+        <Navbar.Collapse id='basic-navbar-nav'>
+          <Nav className='ms-auto'>
+            <Nav.Link href='#home' className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>
               Home
             </Nav.Link>
-            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>
+            <Nav.Link href='#skills' className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>
               Skills
             </Nav.Link>
-            <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>
+            <Nav.Link href='#projects' className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>
               Projects
             </Nav.Link>
           </Nav>
-          <span className="navbar-text">
-            <div className="social-icon">
+          <span className='navbar-text'>
+            <div className='social-icon'>
               <a
                 onClick={(e) => {
                   e.preventDefault();
                   window.open('https://www.linkedin.com/in/royneville', '_blank');
                 }}
-                href="#"
+                href='https://www.linkedin.com/in/royneville'
               >
-                <img src={linkedin} alt="" />
+                <img src={linkedin} alt='' />
               </a>
               <a
                 onClick={(e) => {
                   e.preventDefault();
                   window.open('https://github.com/RNEV', '_blank');
                 }}
-                href="#"
+                href='https://github.com/RNEV'
               >
-                <img src={github} alt="" />
+                <img src={github} alt='' />
               </a>
 
-              <a href="#">
-                <img src={email} alt="" />
+              <a href='https://github.com/RNEV'>
+                <img src={email} alt='' />
               </a>
             </div>
             {/* <button className="vvd" onClick={() => console.log('connect')}>

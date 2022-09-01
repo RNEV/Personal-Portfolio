@@ -7,33 +7,34 @@ import email from '../assets/img/email.svg';
 
 export const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className='footer'>
       <Container>
-        <Row className="align-item-center">
+        <Row className='align-item-center'>
           <Col sm={6}>
-            <img className="footer-logo" src={logo} alt="Logo" />
+            <img className='footer-logo' src={logo} alt='Logo' />
           </Col>
-          <Col sm={6} className="text-center text-sm-end">
-            <div className="social-icon">
+          <Col sm={6} className='text-center text-sm-end'>
+            <div className='social-icon'>
               <a
                 onClick={(e) => {
                   e.preventDefault();
                   window.open('https://www.linkedin.com/in/royneville', '_blank');
                 }}
-                href="#"
+                href='https://www.linkedin.com/in/royneville'
               >
-                <img src={linkedin} alt="Icon1" />
+                <img src={linkedin} alt='Icon1' />
               </a>
               <a
                 onClick={(e) => {
                   e.preventDefault();
                   window.open('https://github.com/RNEV', '_blank');
                 }}
+                href='https://github.com/RNEV'
               >
-                <img src={github} alt="Icon2" />
+                <img src={github} alt='Icon2' />
               </a>
-              <a href="">
-                <img src={email} alt="Icon3" />
+              <a href='https://github.com/RNEV'>
+                <img src={email} alt='Icon3' />
               </a>
             </div>
             <p>CopyRight 2022. All Rights Reserved by Roy Neville</p>

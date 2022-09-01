@@ -21,6 +21,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [text]);
 
   const tick = () => {
@@ -43,17 +44,17 @@ export const Banner = () => {
   };
 
   return (
-    <section className="banner" id="home">
+    <section className='banner' id='home'>
       <Container>
-        <Row className="align-items-center">
+        <Row className='align-items-center'>
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
               {/* code below checks if the element is visible on screen, and if it is,  activates animations */}
               {({ isVisible }) => (
                 <div className={isVisible ? 'animate__animated animate__fadeInDownBig' : ''}>
-                  <span className="tagline">Welcome to Roy's Portfolio</span>
+                  <span className='tagline'>Welcome to Roy's Portfolio</span>
                   <h1>
-                    {`Hi I'm Roy!`} <span className="wrap">{text}</span>
+                    {`Hi I'm Roy!`} <span className='wrap'>{text}</span>
                   </h1>
                   <p>Innovative, Driven Full Stack Developer with a passion for problem solving and creation.</p>
                   <button
@@ -73,7 +74,7 @@ export const Banner = () => {
               {/* code below checks if the element is visible on screen, and if it is activates animations */}
               {({ isVisible }) => (
                 <div className={isVisible ? 'animate__animated animate__fadeInRightBig' : ''}>
-                  <img src={portraitImg} alt="Header Image" />
+                  <img src={portraitImg} alt='Header' />
                 </div>
               )}
             </TrackVisibility>
