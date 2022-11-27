@@ -14,6 +14,7 @@ export const Projects = () => {
       title: 'Furriends Web App',
       description: 'Social Media for your pets',
       imgUrl: FurriendsSS,
+      link: 'https://furriends-32ebf.web.app/home',
     },
     {
       title: 'Future Project 2',
