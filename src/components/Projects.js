@@ -28,7 +28,7 @@ export const Projects = () => {
     },
   ];
   return (
-    <section className='project' id='project'>
+    <section className='project' id='projects'>
       <Container>
         <Row>
           <Col>
@@ -42,7 +42,11 @@ export const Projects = () => {
               )}
             </TrackVisibility>
             <Tab.Container id='projects-tabs' defaultActiveKey='first'>
-              <Nav variant='pills' className='nav-pills mb-5 justify-content-center align-items center' id='pills-tab'>
+              <Nav
+                variant='pills'
+                className='nav-pills mb-5 justify-content-center align-items center'
+                id='pills-tab'
+              >
                 <Nav.Item>
                   <Nav.Link eventKey='first'>Web Applications</Nav.Link>
                 </Nav.Item>
