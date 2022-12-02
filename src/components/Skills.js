@@ -6,8 +6,11 @@ import postgres from '../assets/img/postgres.svg';
 import nodejs from '../assets/img/nodejs.svg';
 import javascript from '../assets/img/javascript.svg';
 import express from '../assets/img/express.svg';
+import tailwind from '../assets/img/tailwind.svg';
 import html from '../assets/img/html.svg';
 import css from '../assets/img/css.svg';
+import react from '../assets/img/react.svg';
+import firebase from '../assets/img/firebase.svg';
 
 export const Skills = () => {
   const responsive = {
@@ -39,20 +42,32 @@ export const Skills = () => {
               <p>Ever growing list of technologies and frameworks</p>
               <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                 <div className='item'>
+                  <img src={javascript} alt='skill' />
+                  <h5>Javascript</h5>
+                </div>
+                <div className='item'>
+                  <img src={react} alt='skill' />
+                  <h5>React</h5>
+                </div>
+                <div className='item'>
                   <img src={postgres} alt='skill' />
                   <h5>PostgreSQL</h5>
+                </div>
+                <div className='item'>
+                  <img src={tailwind} alt='skill' />
+                  <h5>Tailwind</h5>
                 </div>
                 <div className='item'>
                   <img src={nodejs} alt='skill' />
                   <h5>Node Js</h5>
                 </div>
                 <div className='item'>
-                  <img src={javascript} alt='skill' />
-                  <h5>Javascript</h5>
-                </div>
-                <div className='item'>
                   <img src={express} alt='skill' />
                   <h5>Express</h5>
+                </div>
+                <div className='item'>
+                  <img src={firebase} alt='skill' />
+                  <h5>Firebase</h5>
                 </div>
                 <div className='item'>
                   <img src={html} alt='skill' />
