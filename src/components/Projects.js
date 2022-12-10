@@ -3,8 +3,8 @@ import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from '../assets/img/color-sharp2.png';
 import FurriendsSS from '../assets/img/FurriendsSS.png';
-import project2 from '../assets/img/project2.png';
-import project3 from '../assets/img/project3.png';
+import critterCleaners from '../assets/img/critter-cleaners.png';
+import repdb from '../assets/img/repdb.png';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -17,14 +17,16 @@ export const Projects = () => {
       link: 'https://furriends-32ebf.web.app/home',
     },
     {
-      title: 'Future Project 2',
-      description: 'Coming Soon!',
-      imgUrl: project2,
+      title: 'Critter Cleaners',
+      description: 'Dog Grooming Business Page',
+      imgUrl: critterCleaners,
+      link: 'https://crittercleaners.netlify.app/',
     },
     {
-      title: 'Future Project 3',
-      description: 'Coming Soon!',
-      imgUrl: project3,
+      title: 'RepDB',
+      description: 'Reptile/Animal database management system. Work in progress',
+      imgUrl: repdb,
+      link: 'https://github.com/RNEV/RepDB',
     },
   ];
   return (
